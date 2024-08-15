@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Container */
+.coparent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Heading */
+.Wea-ther {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Input and Button */
+#api input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* .btn button:hover {
+  background: linear-gradient(to right, #185a9d, #43cea2);
+} */
+
+
+.action h3,
+.action p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  background: linear-gradient(to right, #000000, #000000);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+      padding: 15px;
+  }
+
+  .Wea-ther {
+      font-size: 1.5rem;
+  }
+
+  #api input {
+      width: 90%;
+  }
+
+  .btn button {
+      font-size: 0.9rem;
+  }
+
+  .action h3,
+  .action p {
+      font-size: 1rem;
+  }
+}
