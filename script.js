@@ -19,7 +19,7 @@ async function Weather() {
         if (response.ok) {
             city.innerHTML = `City name: ${json.name}`;
             temp.innerHTML = `Temperature of city: ${json.main.temp}°C`;
-            date.innerHTML = `Today's weather: ${new Date().toLocaleDateString()}`;
+            date.innerHTML = `Today's date: ${new Date().toLocaleDateString()}`;
             speed.innerHTML = `Speed: ${json.wind.speed} m/s`;
             des.innerHTML=`Weather type: ${json.weather[0].description}`
             setInterval(() => {
